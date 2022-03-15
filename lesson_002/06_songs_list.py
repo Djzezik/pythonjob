@@ -25,7 +25,7 @@ song1 = violator_songs_list[3][1]
 song2 = violator_songs_list[5][1]
 song3 = violator_songs_list[8][1]
 allsong = song1+song2+song3
-print('общее время звучания 3 треков', allsong, 'минут')
+print('Три песни звучат', round(allsong, 2), 'минут')
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -46,6 +46,6 @@ song1 = violator_songs_dict ['Sweetest Perfection']
 song2 = violator_songs_dict['Policy of Truth']
 song3 = violator_songs_dict['Blue Dress']
 allsong = song1+song2+song3
-print('А другие три песни звучат', allsong, 'минут')
+print('А другие три песни звучат', round(allsong, 2) , 'минут')
 
 # TODO здесь ваш код
