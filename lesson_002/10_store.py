@@ -34,7 +34,7 @@ store = {
 # Рассчитать на какую сумму лежит каждого товара на складе
 # например для ламп
 
-lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
+# lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
 # или проще (/сложнее ?)
 lamp_code = goods['Лампа']
 lamps_item = store[lamp_code][0]
@@ -43,6 +43,31 @@ lamps_price = lamps_item['price']
 lamps_cost = lamps_quantity * lamps_price
 print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
 
+styl_code = goods['Стол']
+styl_item = store[styl_code][0]
+styl_quantity = styl_item['quantity']
+styl_price = styl_item['price']
+styl_cost = styl_quantity * styl_price
+styl_code = goods['Стол']
+styl_item1 = store[styl_code][1]
+styl_quantity1 = styl_item1['quantity']
+styl_price1 = styl_item1['price']
+styl_cost1 = styl_quantity1 * styl_price1
+resylt = (styl_cost+styl_cost1)* (styl_price+ styl_price1)
+allquantity = styl_quantity + styl_quantity1
+print('Стол -', allquantity, 'шт, стоимость', styl_cost, 'руб')
+
+divan_code = goods['Диван']
+divan_item = store[divan_code][0]
+divan_quantity1 = divan_item['quantity']
+divan_price = divan_item['price']
+divan_cost = divan_quantity1 * divan_price
+divan_code = goods['Диван']
+divan_item = store[divan_code][1]
+divan_quantity2 = divan_item['quantity']
+divan_price = divan_item['price']
+divan_cost1 = divan_quantity2 * divan_price
+print('Диван -', divan_quantity2 + divan_quantity1, 'шт, стоимость', divan_cost + divan_cost1, 'руб')
 
 
 # Вывести стоимость каждого товара на складе: один раз распечать сколько всего столов, стульев и т.д. на складе
