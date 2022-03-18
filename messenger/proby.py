@@ -1,26 +1,40 @@
-def print_message(soobsenie):  # обьявление функции сообщения на печать
-    print(soobsenie ["sender"])
-    print(soobsenie ["time"])
-    print(soobsenie ["text"])
+from flask import Flask
+
+messages = [
+    {
+        "text": "Как дела",
+        "sender": "Михаил",
+        "time": "19:20"
+    },
+    {
+        "text": "Дела - отлично",
+        "sender": "Василий",
+        "time": "19:21"
+    }
+]
 
 
-# словарь
-message1 = {
-    'text': 'как дела',
-    'sende': 'Михаил',
-    'time': '19:20'
-
-}
-
-massage2 = {
-    'text': 'отлично',
-    'sende': 'Василий',
-    'time': '19:21'
-}
+def add_message(text, sender):  # Объявим функцию, которая добавит сообщение в список
+    new_message = {
+        "text": text,
+        "sender": sender,
+        "time": "23:59"  # ToDO: указать правильное время/дату
+    }
+    messages.append(new_message)  # Добавляем новое сообщение в список
 
 
+def print_message(message):  # Объявляем функцию, которая будет печатать одно сообщение
+    print(f"[{message['sender']}]: {message['text']} / {message['time']} ")
 
 
+add_message("а еще долго будет идти?", "Марина")
+add_message("Запятую надо убрать ", "Vova")
 
-print_message()
-print_message()
+for message in messages:
+    print_message(message)
+
+#  ПЛАН
+#  1. Создали внутреннюю возможность хранить сообщения, добавлять новые и читать чат
+#  2. Подключить визуальный интерфейс к этим внутренним возможностями
+#     - Превратить наш код в веб-сервер. Flask
+#     - Создать интерфейс и подключить его к веб-серверу
