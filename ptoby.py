@@ -7,3 +7,4 @@ while True:
         break
     else:
         print('Я просил 42, а Вы ввели', result, 'Попробуйте еще раз...')
+        #проверка git c ноута
