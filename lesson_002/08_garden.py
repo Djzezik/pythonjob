@@ -8,22 +8,20 @@ garden = ('ромашка', 'роза', 'одуванчик', 'ромашка', 
 meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер', 'мак', 'одуванчик', 'ромашка', )
 
 # создайте множество цветов, произрастающих в саду и на лугу
-garden_set = set(garden)
-meadow_set = set(meadow)
-print(garden_set)
-print(meadow_set)
-
+# garden_set =
+# meadow_set =
+# TODO здесь ваш код
 
 # выведите на консоль все виды цветов
-print(garden_set | meadow_set)
+# TODO здесь ваш код
 
 # выведите на консоль те, которые растут и там и там
-print(garden_set & meadow_set)
+# TODO здесь ваш код
 
 # выведите на консоль те, которые растут в саду, но не растут на лугу
-print(garden_set - meadow_set)
+# TODO здесь ваш код
 
 # выведите на консоль те, которые растут на лугу, но не растут в саду
-print(meadow_set - garden_set)
+# TODO здесь ваш код
 
 
