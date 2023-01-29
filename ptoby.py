@@ -1,2 +1,2 @@
 print('hello')
-#проверка git linux home
+#проверка git macos
