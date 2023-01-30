@@ -12,8 +12,8 @@
 envelop_x, envelop_y = 10, 7
 paper_x, paper_y = 8, 9 # NO!
 # проверить для
-# paper_x, paper_y = 9, 8 # NO!
-# paper_x, paper_y = 6, 8 # YES!
+paper_x, paper_y = 9, 8 # NO!
+paper_x, paper_y = 6, 8 # YES!
 # paper_x, paper_y = 8, 6 # YES!
 # paper_x, paper_y = 3, 4 # YES!
 # paper_x, paper_y = 11, 9 # NO!
