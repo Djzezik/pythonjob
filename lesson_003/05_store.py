@@ -48,6 +48,19 @@ store = {
 
 # TODO здесь ваш код
 
+for tovar in store:
+    if tovar == '12345':
+        lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
+    if tovar == '23456':
+        stol_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price']
+    if tovar == '34567':
+        divan_cost = store[goods['Диван']][0]['quantity'] * store[goods['Диван']][0]['price']
+    if tovar == '45678':
+        styl_cost = store[goods['Стул']][0]['quantity'] * store[goods['Стул']][0]['price']
+print('Лампа', lamps_cost, 'руб')
+print('Стол', stol_cost, 'руб')
+print('Диван', divan_cost, 'руб')
+print('Стул', styl_cost, 'руб')
 
 
 

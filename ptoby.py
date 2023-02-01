@@ -1,12 +1,16 @@
-import simple_draw as sd
-circle (center_position, radius=50, color=COLOR_YELLOW, width=1):
-def bubble (point, step, color_):
-    radius = 50
-    for _ in range(3):
-        radius +=step
-        sd.circle(center_position=point, radius=radius, width=2, color=color_)
+educational_grant, expenses = 10000, 12000
 
+months = 10
+infl = 1.03
+total_educational_grant = educational_grant * months
+total_expenses = 0
 
-for _ in range(100):
-    point = sd.random_point()
-    bubble(point=point, step=5)
+while months > 0:
+    expenses *= (1 if months == 10 else infl)
+    total_expenses += expenses
+
+    months -= 1
+    # print(months, total_expenses)
+
+print(int(total_expenses - total_educational_grant))
+# 37566
