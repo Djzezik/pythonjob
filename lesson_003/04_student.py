@@ -12,3 +12,15 @@
 educational_grant, expenses = 10000, 12000
 
 # TODO здесь ваш код
+
+i = 1
+summa = 0
+procent = expenses
+while i < 9:
+    procent = expenses * 3 / 100
+    expenses += procent
+    summa = summa + (expenses - educational_grant)
+    i += 1
+print('Студенту надо попросить', round(summa, 2), 'рублей')
+
+
