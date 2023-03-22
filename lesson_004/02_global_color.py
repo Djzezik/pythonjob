@@ -24,9 +24,9 @@ color = {1:'COLOR_RED',
          6:'COLOR_BLUE',
          7:'COLOR_PURPLE'}
 
-# pprint( color)
-# colorinput =  input("Введите номер желаемого цвета")
-# colorinput = int(colorinput)
+pprint( color)
+colorinput =  input("Введите номер желаемого цвета")
+colorinput = int(colorinput)
 
 def triangle(point, angle, length, color): # функция рисования трехугольника
     v1 = sd.line(start_point=point, angle=angle, length=length, width=3, color=sd.COLOR_RED)
